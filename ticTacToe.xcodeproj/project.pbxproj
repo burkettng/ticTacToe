@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01C7D4FB255C54DD003B90FD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01C7D4FA255C54DD003B90FD /* main.cpp */; };
+		0192550F255C5A3F00CA426A /* tictactoe.cc in Sources */ = {isa = PBXBuildFile; fileRef = 0192550C255C5A3F00CA426A /* tictactoe.cc */; };
+		01925510255C5A3F00CA426A /* main.cc in Sources */ = {isa = PBXBuildFile; fileRef = 0192550E255C5A3F00CA426A /* main.cc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +24,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0192550C255C5A3F00CA426A /* tictactoe.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tictactoe.cc; sourceTree = "<group>"; };
+		0192550D255C5A3F00CA426A /* tictactoe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tictactoe.h; sourceTree = "<group>"; };
+		0192550E255C5A3F00CA426A /* main.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cc; sourceTree = "<group>"; };
 		01C7D4F7255C54DD003B90FD /* ticTacToe */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ticTacToe; sourceTree = BUILT_PRODUCTS_DIR; };
-		01C7D4FA255C54DD003B90FD /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +60,9 @@
 		01C7D4F9255C54DD003B90FD /* ticTacToe */ = {
 			isa = PBXGroup;
 			children = (
-				01C7D4FA255C54DD003B90FD /* main.cpp */,
+				0192550E255C5A3F00CA426A /* main.cc */,
+				0192550C255C5A3F00CA426A /* tictactoe.cc */,
+				0192550D255C5A3F00CA426A /* tictactoe.h */,
 			);
 			path = ticTacToe;
 			sourceTree = "<group>";
@@ -118,7 +123,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01C7D4FB255C54DD003B90FD /* main.cpp in Sources */,
+				01925510255C5A3F00CA426A /* main.cc in Sources */,
+				0192550F255C5A3F00CA426A /* tictactoe.cc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
