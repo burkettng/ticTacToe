@@ -7,6 +7,69 @@
 #include <stdio.h>
 #include "tictactoe.h"
 
+/*
+ This is my clearBoard() method which takes a pointer to a
+ gameData_t structure. It will then loop through the array
+ and set all the indexes to a spce(' ').
+ */
+void clearBoard(gameData_t *clearPtr){
+    
+    //Enter the outter loop.
+    for(int i = 0; i < 3; i ++){
+        
+        //Enter the inner loop.
+        for(int j = 0; j < 3; j ++){
+            
+            //Here I set each index of board to a space(' ').
+            clearPtr -> board[i][j] = ' ';
+            
+        }
+    }
+    
+    return;
+}
+
+/*
+ This is my getPlayerInfo() method that takes a pointer to a
+ gameData_t structure and sets the player's names and
+ ages for the game.
+*/
+void getPlayerInfo(gameData_t *gamePtr){
+    
+    //Here I get player 1's name and age for the game.
+    printf("Player 1 enter your name: ");
+    scanf("%s", gamePtr -> name1);
+    printf("Player 1 enter your age: ");
+    scanf("%d", &gamePtr -> age1);
+    
+    printf("\n");
+    printf("\n");
+    
+    //Here I get player 2's name and age for the game.
+    printf("Player 2 enter your name: ");
+    scanf("%s", gamePtr -> name2);
+    printf("Player 2 enter your age: ");
+    scanf("%d", &gamePtr -> age2);
+    
+    return;
+}
+
+/*
+ This is my printPlayerInfo method that will print
+ each of the players info for the game.
+ */
+void printPlayerInfo(gameData_t helper){
+    
+    //Print player ones info.
+    printf("Player 1 is %s age %d and will be Xs\n", helper.name1, helper.age1);
+    
+    //Print player twos info.
+    printf("Player 2 is %s age %d and will be Os", helper.name2, helper.age2);
+    
+    return;
+}
+
+
 void runGame() {
   
   gameData_t gameData;
@@ -16,14 +79,14 @@ void runGame() {
   char turn = 'X';
   
   //Set board to all spaces.
-  //clearBoard(&gameData);
+  clearBoard(&gameData);
   
   //Get both players name and age
-  //getPlayerInfo(&gameData);
+  getPlayerInfo(&gameData);
   
   //Show the player info
   printf("\n");
-  //printPlayerInfo(gameData);
+  printPlayerInfo(gameData);
   printf("\n");
   
   while (!win && !tie) {

@@ -1,8 +1,7 @@
 //main.cc  - Don't alter this file.
 #include <stdio.h>
-//void runGame();
+void runGame();
 int main() {
-  //runGame();
+  runGame();
     
-    printf("hello fucker");
 }
