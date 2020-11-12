@@ -69,6 +69,45 @@ void printPlayerInfo(gameData_t helper){
     return;
 }
 
+/*
+ Here is the printTurnHeader!!!!!
+ */
+void printTurnHeader(gameData_t gameVar, char turnVar){
+    
+    for(int i = 0; i < 50; i ++){
+        if(i != 49){
+            printf("-");
+        }
+        else{
+            printf("-\n");
+        }
+        
+    }
+    
+    if(turnVar == 'X'){
+        printf("---------- %s's Turn --------------------\n", gameVar.name1);
+        printf("---------- You are Xs --------------------\n");
+    }
+    else{
+        printf("---------- %s's Turn --------------------\n", gameVar.name2);
+        printf("---------- You are Os --------------------\n");
+    }
+    
+    
+    
+    for(int i = 0; i < 50; i ++){
+        if(i != 49){
+            printf("-");
+        }
+        else{
+            printf("-\n");
+        }
+        
+    }
+    
+    return;
+}
+
 
 void runGame() {
   
@@ -92,7 +131,7 @@ void runGame() {
   while (!win && !tie) {
     int count = 0;
     
-    //printTurnHeader(gameData, turn);
+    printTurnHeader(gameData, turn);
     //printBoard(gameData);
     //getMove(&gameData, turn);
     
